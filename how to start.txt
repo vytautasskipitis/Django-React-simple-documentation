@@ -1,0 +1,55 @@
+*required:
+pip install virtualenv 
+python
+nodejs
+*XAMPP
+*MYSQL client
+
+
+*BACKEND:
+
+*open cmd in this dir:
+
+virtualenv venv
+venv\scripts\activate
+pip install mysqlclient
+pip install -r requirements.txt
+python -m pip install django-cors-headers
+cd djangoreact
+py manage.py makemigrations
+py manage.py migrate
+py manage.py createsuperuser
+py manage.py runserver
+
+*ctrl + link
+
+
+*FRONTEND:
+
+*open 1more cmd in the same directory as when starting the backend:
+
+venv\scripts\activate
+cd djangoreact
+cd frontend
+npm install react-router-dom
+npm start
+
+*now both frontend and backend must work 
+
+
+***
+*DATABASE
+
+*open XAMPP control panel 
+*start Apache and MySQL in XAMPP
+
+http://localhost/phpmyadmin
+*click on "mysql_database" in navbar
+
+*this is your database
+
+
+
+
+
+
